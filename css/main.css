@@ -25,6 +25,7 @@ text-align: center;
 	display: block;
 	width:40%;
 	margin:0 auto;
+  max-width: 128px;
 }
 
 h1 {
@@ -49,13 +50,61 @@ li {
   display: inline-block;
   width: 33%;
   margin-right: -5px;
+  text-align: center;
 }
 
 li img {
   width:80%;
-  margin: 0 10%;
+  margin: 0 auto;
 }
 
 .contact {
   padding: 0;
 }
+
+footer {
+  margin: 2em 0;
+}
+
+.contact img {
+  max-width:4em;
+}
+
+@media only screen and (min-width: 37em) {
+
+main {
+  background-image: url("../img/portrait.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding-bottom: 2em;
+  height: 60vw;
+}
+
+/*VW a unit that refers to the width of my viewport*/
+
+.portrait {
+ display: none;
+}
+
+main p {
+  width:50%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  top:20%;
+  max-width: 480px;
+}
+
+header {
+  height: 370px;
+}
+
+.centered {
+  position: relative;
+  top: 25%;
+  opacity:0.6;
+}
+
+}
+
+@media only screen and (min-width: 50em)
