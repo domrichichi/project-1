@@ -17,6 +17,8 @@ html {
 }
 }
 
+/*Header*/
+
 header {
 text-align: center;
 }
@@ -31,6 +33,7 @@ text-align: center;
 h1 {
 	text-align:center;
   margin:0;
+  font-family: 'Playfair Display', serif;
 }
 
 .portrait {
@@ -44,6 +47,10 @@ header {
 
 h1 {
   color: white;
+}
+
+main p {
+  padding:0 1em;
 }
 
 li {
@@ -78,6 +85,7 @@ main {
   background-size: cover;
   padding-bottom: 2em;
   height: 60vw;
+  left:-20px;
 }
 
 /*VW a unit that refers to the width of my viewport*/
@@ -90,7 +98,7 @@ main p {
   width:50%;
   height: auto;
   position: relative;
-  left: 50%;
+  left: 44%;
   top:20%;
   max-width: 480px;
 }
