@@ -158,6 +158,7 @@ main {
   padding-bottom: 2em;
   height: 50vw;
   overflow:scroll;
+  overflow-x:hidden;
 }
 
 /*VW a unit that refers to the width of my viewport*/
