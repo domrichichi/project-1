@@ -10,6 +10,8 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 </head>
 
+<body>
+
 <header>
 	<div class="centered">
 		<img class="logo" alt="logo" src="img/eye-white.svg">
@@ -19,38 +21,41 @@
 
 <nav>
 	<ul class= "nav">
-		<li>Home</li>
-		<li>Work</li>
-		<li>Contact</li>
+		<li><a class="menuhover" href="#home">Who I Am</a></li>
+		<li><a class="menuhover" href="#work">Work</a></li>
+		<li><a class="menuhover" href="#contact">Contact</a></li>
 	</ul>
 </nav>
 
 <main>
-	<img class="portrait"  alt="portrait" src="img/portrait-crop.jpg">
+	<img id="home" class="portrait"  alt="portrait" src="img/portrait-crop.jpg">
 	<p>
 	I have always been drawn to the endless possibilities that exist within the field of visual arts. My passion of aesthetic and technique prompted me to earn my bachelor’s degree in art history theory, where I cultivated my understanding and capacities for the dramatic, the decorative, the innovative and the memorable.<br>
 	<br>
 	My passion for visual arts hasn't stemmed solely from my appreciate for fine arts, but also my desire to communicate. Since earning my degree, my interests and hobbies expanded past the study of fine arts to photography, digital art, design and eventually lead me to enrol in the graphic design program at Algonquin College. As a graphic designer,  my goal is to produce unique, creative, and adaptable solutions for clients.
 </p>
 
-<br>
 </main>
 
-<body>
+<div class="divbox">
+	<h2>Work</h2>
+	<div id="work" class="workbox">
+			<img class="work1" alt="Tombstone" src="img/photography.jpg">
+			 <h3 class="phototitle">Photography</h3>
+	</div>
 
-<h2>Work</h2>
-
-<div>
-	<h3>Photography</h3>
-	<img  class="workphoto" alt="Tombstone" src="img/card-img-6.jpg">
+	<div class="workbox">
+			<img class="work2" alt="Rad Zombie" src="img/illustration.jpg">
+			 <h3 class="illustitle">Illustration</h3>
+	 </div>
 </div>
 
-<h3>Blog</h3>
-
 <footer>
-	<ul class= "contact">
+	<ul id="contact" class= "contact">
 		<li><img alt="" src="img/link.svg"></li>
 		<li><img alt="Personal Blog" src="img/tumblr.svg"></li>
 		<li><img alt="Instagram Page" src="img/instagram.svg"></li>
 	</ul>
 </footer>
+
+</body>

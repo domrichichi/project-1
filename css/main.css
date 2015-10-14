@@ -71,6 +71,14 @@ nav li:hover {
   padding-left:0;
 }
 
+.menuhover:link,
+.menuhover:active,
+.menuhover:focus,
+.menuhover:visited {
+  text-decoration: none;
+  color: black;
+}
+
 /*.nav-fade li {
    background: #fff;
    padding: 3px 8px;
@@ -102,16 +110,38 @@ h2 {
   background-color: black;
   color: white;
   font-family: 'Playfair Display', serif;
+  padding:0.5em;
 }
 
 /*Work*/
-.workphoto{
+.work1 {
   width:100%;
+}
+
+.work2 {
+  width: 100%;
 }
 
 h3 {
   text-align: center;
 }
+
+.phototitle {
+  position: absolute;
+  width:100%;
+}
+
+.illustitle {
+  position: absolute;
+  width:100%;
+}
+
+.divbox {
+  display: block;
+  height: 22em;
+  /*overflow: hidden;*/
+}
+
 
 
 /*--------Footer--------*/
@@ -130,6 +160,8 @@ li img {
 
 footer {
   margin: 2em 0;
+  display:block;
+  height:5em;
 }
 
 .contact img {
@@ -137,6 +169,8 @@ footer {
 }
 
 /*--------Media Queries--------*/
+
+
 
 @media only screen and (min-width: 20em) {
 
@@ -152,6 +186,32 @@ nav li {
 }
 
 @media only screen and (min-width: 37em) {
+
+/*--------Carousel--------*/
+
+@keyframes go {
+  0% {
+    background-image: url(../img/card-img-6.jpg);
+  }
+    33% {
+    background-image: url(../img/card-img-7.jpg);
+  }
+    66% {
+    background-image: url(../img/card-img-8.jpg);
+  }
+    100% {
+    background-image: url(../img/card-img-9.jpg);
+  }
+}
+
+header {
+  background-size:cover;
+  background-position:center;
+  animation: go 15s linear infinite;
+  animation: go 15s linear infinite;
+}
+
+
 
 header {
   font-size:1.5em;
@@ -184,16 +244,6 @@ main p {
   left:2em;
 }
 
-/*main p {
-  width:50%;
-  height: auto;
-  position: relative;
-  left: 44%;
-  top:20%;
-  max-width: 480px;
-  font-size: 17px;
-}*/
-
 header {
   height: 370px;
 }
@@ -211,8 +261,22 @@ header {
 
 /*Work*/
 
-.workphoto {
+.workbox {
+  position:relative;
+  float: left;
   width:50%;
+}
+
+.phototitle {
+  position: absolute;
+  bottom:0.5em;
+  color: white;
+}
+
+.illustitle {
+  position: absolute;
+  bottom:0.5em;
+  color: white;
 }
 
 }
