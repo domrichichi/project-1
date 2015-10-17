@@ -13,8 +13,11 @@ html {
 
   font-size: 100%;
   line-height:1.3;
-  font: normal 100%/1.3 Verdana,sans-serif;
+  font: normal 100%;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 /*--------Header--------*/
@@ -189,6 +192,21 @@ nav li {
 
 /*--------Carousel--------*/
 
+-webkit-@keyframes go {
+  0% {
+    background-image: url(../img/card-img-6.jpg);
+  }
+    33% {
+    background-image: url(../img/card-img-7.jpg);
+  }
+    66% {
+    background-image: url(../img/card-img-8.jpg);
+  }
+    100% {
+    background-image: url(../img/card-img-9.jpg);
+  }
+}
+
 @keyframes go {
   0% {
     background-image: url(../img/card-img-6.jpg);
@@ -207,7 +225,7 @@ nav li {
 header {
   background-size:cover;
   background-position:center;
-  animation: go 15s linear infinite;
+  -webkit-animation: go 15s linear infinite;
   animation: go 15s linear infinite;
 }
 
